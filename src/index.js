@@ -56,3 +56,16 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Harrisburg");
+let forecast = document.querySelector("#forecast");
+forecast.innerHTML = `
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Tue</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temperatures">
+              <span class="weather-forecast-temperature">
+                <strong>15º</strong>
+              </span>
+              <span class="weather-forecast-temperature">9º</span>
+            </div>
+          </div>
+        `;
